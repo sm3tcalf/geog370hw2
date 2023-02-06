@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projections</title>
+</head>
+<body>
+    <h1>In this project I learned how to display images in different projections -- Sam Metcalf</h1>
+    
+    <h2 style="color:red">Describe in your own words how you displayed the map in different projections using QGIS</h2>
+    <p>To display the map in different projections in QGIS, you can change the map projection by clicking the map projection button in the bottom right corner and selecting a different map projection from the list. This converts the way that the spatial data is represented on the canvas, and the indicatrix nodes represent the distortion that each map projection creates at selected points. From there, you can just make a New Layout with every projection to save each map projection as a .png file.</p>
+    
+    <h2>WGS84 Projection</h2>
+    <h3>Some observations: this map distorts shape at the poles and size (but not to an extreme degree); overall this makes for a pleasant and relatively balanced projection.</h3>
+    <a href=".//maps/4326.png">
+    <img src=".//maps/4326.png" alt="WGS84" width='500px'>
+    </a>
+    <h2>Aitoff Projection</h2>
+    <h3>Some observations: this projection opts for a rounder field that distorts shape but keeps size relatively the same, and manages to convey the roundness of the Earth.</h3>
+    <a href=".//maps/54043.png">
+    <img src=".//maps/54043.png" alt="Aitoff" width='500px'>
+    </a>
+    <h2>Pseudo-Mercator Projection</h2> 
+    <h3>Some observations: this map distorts size at the poles but keeps shape the same, good for navigation but makes Greenland and other land near the poles appear enormous</h3>
+    <a href="./maps/3857.png">
+    <img src="./maps/3857.png" alt="3857" width='500px'>
+    </a>
+    <h2>Winkel Sphere Projection</h2>
+    <h3>Some observations: this map seems to strike a balance between distorting shape and size, while also preserving the round shape of the globe.</h3>
+    <a href="./maps/53018.png">
+    <img src="./maps/53018.png" alt="53018" width='500px'>
+    </a>
+    <h2>World Cylindrical Equal Area Projection</h2>
+    <h3>Some observations: this projection preserves area at the expense of severely distorting shape, countries near the poles are very stretched</h3>
+    <a href=".//maps/54034.png">
+    <img src=".//maps/54034.png" alt="54034" width='500px'>
+    </a>
+    <h2>World Equidistant Conic Projection</h2>
+    <h3>Some observations: conic projections are good at preserving shape and size along a narrow area (specfically lengthwise) but over the entire globe it leads to lots of spatial and size distortion the further south you go.</h3>
+    <a href=".//maps/54027.png">
+    <img src=".//maps/54027.png" alt="54027" width='500px'>
+    </a>
+    <h2>North Pole Azimuthal Equidistant Projection</h2>
+    <h3>Some observations: similar to the conic projection; the distortion increases dramatically the further you go from the north pole</h3>
+    <a href=".//maps/102016.png">
+    <img src=".//maps/102016.png" alt="102016" width='500px'>
+    </a>
+    <h2>Patterson Cylindrical Projection</h2>
+    <h3>Some observations: Similar to the Pseudo-Mercator and WGS84 projection by distorting size and shape at the poles</h3>
+    <a href=".//maps/54079.png">
+    <img src=".//maps/54079.png" alt="Aitoff" width='500px'>
+    </a>
+    <h2>Bonne Projection</h2>
+    <h3>Some observations: sort of a bizarre projection that distorts the further you travel from the north pole and from the prime meridian</h3>
+    <a href=".//maps/54024.png">
+    <img src=".//maps/54024.png" alt="Aitoff" width='500px'>
+    </a>
+    <p></p>
+    <h2>Data used for this project</h2>
+    <a href="https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip"> Download Natural Earth 1:10m Cultural Vector </a>
+    <p></p>
+    <a href="/geog370hw2/index.html">Back to Index</a>
+</body>
+</html>
