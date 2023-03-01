@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 6</title>
+</head>
+<body>
+<h1>Homework 6 part 2: Census Data Ratios and Categories </h1>
+<h2>Sam Metcalf</h2>
+<!-- Your map goes here -->
+<h3>Equal Count</h3>
+<a href="./data/equalcount.png">
+    <img src="./data/equalcount.png" alt="equal count" width='500px'>
+    </a>
+    <p></p>
+    <p>Equal Count categorization creates classes that are filled equally by the data (for example, if there are 20 data points and 5 classes, each class holds 4 data points). This system is good for data that is linearly distributed and with little variation, but can fail to accurately highlight hotspots in data that is distributed more unevenly or exponentially.</p>
+<h3>Equal Scale</h3>
+    <a href="./data/equalscale.png">
+     <img src="./data/equalscale.png" alt="equal scale" width='500px'>
+    </a>
+    <p></p>
+    <p>Equal Scale categorizations creates classes that are all the same size. This is good for simplicity's sake and for reader comprehension of the data, and works particularly well if the data is distributed very evenly and linearly. However, if the data is unevenly spread over a wide range, much of the map may be the same color and it may lose a lot of nuance that other categorization methods provide. </p>
+<h3>Natural Breaks</h3>
+    <a href="./data/naturalbreaks.png">
+    <img src="./data/naturalbreaks.png" alt="natural breaks" width='500px'>
+    </a>
+    <p></p>
+    <p>Natural Break categorization works by taking the mean from the "hotspots" of the data and creating classes based on the averages of those values, which reduces variance within classes and maximizes it outside of classes. This method is good for emphasizing any hotspots in the data but is not as good as the Equal Count categorization at displaying outlier data. </p>
+    <p></p>
+    <a href="https://sm3tcalf.github.io/geog370hw2/"> Back to Index</a>"
+</body>
+</html>
